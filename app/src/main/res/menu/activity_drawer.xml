@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_add_comic"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="@string/add_comic" />
+        <item
+            android:id="@+id/nav_view_series"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="@string/view_series" />
+        <item
+            android:id="@+id/nav_search_comics"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="@string/search_comics" />
+    </group>
+
+    <item android:title="Tools">
+        <menu>
+            <item
+                android:id="@+id/nav_import_comics"
+                android:icon="@drawable/add"
+                android:title="@string/import_comics" />
+            <item
+                android:id="@+id/nav_export_comics"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="@string/export_comics" />
+            <item
+                android:id="@+id/nav_delete_all_comics"
+                android:icon="@android:drawable/ic_menu_delete"
+                android:title="@string/delete_all_comics" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@android:drawable/ic_menu_send"
+                android:title="@string/nav_feedback" />
+            <item
+                android:id="@+id/nav_about_app"
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="@string/about_app" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '23.0.3'
+
+    dexOptions {
+        jumboMode true
+    }
+
+
+        lintOptions {
+          //  checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+           // abortOnError false
+            checkReleaseBuilds false
+            abortOnError false
+        }
+
+
+    defaultConfig {
+        applicationId "me.ryancoley.comix"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            //minifyEnabled true
+           // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        /*debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }*/
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    productFlavors {
+        def BOOLEAN = "boolean"
+        def TRUE = "true"
+        def FALSE = "false"
+        def HAS_ADS = "HAS_ADS"
+        free {
+            applicationId "me.ryancoley.comix.free"
+            buildConfigField BOOLEAN, HAS_ADS, TRUE
+            versionName "1.0-free"
+        }
+
+        paid {
+            applicationId "me.ryancoley.comix.paid"
+            buildConfigField BOOLEAN, HAS_ADS, FALSE
+            versionName "1.0-paid"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.github.satyan:sugar:1.4'
+    compile 'com.edwardvanraak:MaterialBarcodeScanner:0.0.6-ALPHA'
+    compile 'com.nbsp:library:1.09'
+    compile('com.mikepenz:aboutlibraries:5.8.1@aar') {
+        transitive = true
+    }
+    compile 'com.sromku:simple-storage:1.2.0'
+    compile files('libs/jxl.jar')
+    compile 'com.github.nisrulz:optimushttp:1.1.0'
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+
+    compile 'com.android.support:support-annotations:24.2.1'
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style=""
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/itemSeriesTitle"
+        style=""
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Series Title"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/itemPublisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1.0"
+            android:gravity="left"
+            android:text="Publisher"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/itemNumberOfIssues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:text="\# of Issues"
+            android:textAppearance="?android:textAppearanceMedium" />
+    </LinearLayout>
+</LinearLayout>

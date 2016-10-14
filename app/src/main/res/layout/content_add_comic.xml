@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddComic"
+    tools:showIn="@layout/app_bar_add_comic">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="left|center"
+            android:orientation="vertical">
+
+            <AutoCompleteTextView
+                android:id="@+id/actvSeries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Series" />
+
+            <EditText
+                android:id="@+id/issueNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Issue Number"
+                android:inputType="number|text"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/issueTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Issue Title"
+                android:textSize="18.0sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/actvPublisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Publisher" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Cover Date" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spnCoverMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight=".5"
+                    android:entries="@array/months" />
+
+                <Spinner
+                    android:id="@+id/spnCoverYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/coverPrice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cover Price"
+                android:inputType="numberDecimal"
+                android:numeric="decimal"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Comic Grade" />
+
+            <Spinner
+                android:id="@+id/condition"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/comic_grades"
+                android:focusable="false" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Storage Method" />
+
+            <Spinner
+                android:id="@+id/storageMethod"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/comic_storage" />
+
+            <EditText
+                android:id="@+id/comicLocation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Comic Location"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Read/Unread" />
+
+            <Spinner
+                android:id="@+id/readUnread"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/comic_read" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Acquired Date" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spnAquiredMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight=".5"
+                    android:entries="@array/months" />
+
+                <Spinner
+                    android:id="@+id/spnAquiredYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/pricePaid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price Paid"
+                android:inputType="numberDecimal"
+                android:numeric="decimal"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/locationAcquired"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location Acquired"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/writer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Writer"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/penciller"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Penciller"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/inker"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Inker"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/colorist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Colorist"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/letterer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Letterer"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/editor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Editor"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/coverArtist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cover Artist"
+                android:textSize="18.0sp" />
+
+            <!--<EditText android:textSize="18.0sp" android:id="@+id/barcode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Barcode"
+                android:numeric="integer"
+                android:inputType="number" />-->
+            <TextView
+                android:id="@+id/tvBarcode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Click to add Barcode" />
+
+            <!--<Button android:textSize="30.0dp" android:textColor="#ffffffff" android:id="@+id/btnAddComic" android:background="@drawable/button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Add Comic" android:onClick="addComic" />-->
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

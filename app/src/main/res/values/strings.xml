@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Comix</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="menu_title">Menu</string>
+    <string name="add_comic">Add Comic</string>
+    <string name="edit_comic">Edit Comic</string>
+    <string name="view_series">View Series</string>
+    <string name="search_comics">Search</string>
+
+    <string name="save_comic">Save</string>
+    <string name="cancel_comic">Cancel</string>
+    <string name="export_comics">Export Comics</string>
+    <string name="import_comics">Import Comics</string>
+    <string name="delete_all_comics">Delete All Comics</string>
+    <string name="about_app">About App</string>
+    <string name="title_activity_add_comic">Add Comic</string>
+    <string name="title_activity_view_series">View Series</string>
+    <string name="barcode_comic">Scan Comic Barcode</string>
+
+    <string-array name="comic_read">
+        <item>Unread</item>
+        <item>Read</item>
+    </string-array>
+
+    <string-array name="comic_storage">
+        <item>None</item>
+        <item>Bagged</item>
+        <item>Bagged/Boarded</item>
+    </string-array>
+
+    <string-array name="comic_grades">
+        <item>Unknown</item>
+        <item>NM Near Mint</item>
+        <item>VF Very Fine</item>
+        <item>FN Fine</item>
+        <item>VG Very Good</item>
+        <item>GD Good</item>
+        <item>FR Fair</item>
+        <item>PR Poor</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>Title</item>
+        <item>Issue Number</item>
+        <item>Series</item>
+    </string-array>
+
+    <string-array name="months">
+        <item>Unknown</item>
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>Aug</item>
+        <item>Sept</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+        <item>Annual</item>
+    </string-array>
+    <string name="title_activity_view_issues">View Issues</string>
+    <string name="title_activity_view_comic">View Comic</string>
+    <string name="title_activity_search_comics">Search Comics</string>
+    <string name="delete_comic">Delete Comic</string>
+    <string name="nav_feedback">Feedback</string>
+    <string name="scan_barcode">Scan Barcode</string>
+    <string name="import_comics_message">Importing Comics</string>
+
+    <string-array name="export">
+        <item>CSV</item>
+        <item>Excel</item>
+        <item>HTML</item>
+        <item>PDF</item>
+    </string-array>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="delete_series">Delete Series</string>
+    <string name="sponsored">Sponsored</string>
+    <string name="seriesLabel">Series:</string>
+
+</resources>
